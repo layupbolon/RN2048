@@ -16,7 +16,6 @@ export default class Cell extends React.Component {
             top: 15 * this.props.tile.x + MARGIN_WIDTH,
             left: (MARGIN_WIDTH + ITEM_WIDTH) * this.props.tile.y + MARGIN_WIDTH,
         }
-  //2123
         var tileColor = this.props.tile.value > 2048 ? styles['tilesuper'] : styles['tile' + this.props.tile.value];
         var fontStyle = this.props.tile.value > 2048 ? styles['tilesuperText'] : styles['tile' + this.props.tile.value + 'Text'];
 
